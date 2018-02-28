@@ -1,3 +1,11 @@
-#menuButton{
-    margin: 2vh;
+html{
+    background-color: slateblue;
 }
+
+#jobSearched{
+    font-size: 3.5vh;
+}
+
+.parallax-container {
+    height: 70vh;
+  }
