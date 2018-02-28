@@ -2,10 +2,10 @@ html{
     background-color: slateblue;
 }
 
-#jobSearched{
-    font-size: 3.5vh;
+#jobTitle{
+    font-size: 3vh;
 }
 
 .parallax-container {
-    height: 70vh;
+    height: 50vh;
   }
