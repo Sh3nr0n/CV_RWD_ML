@@ -2,10 +2,16 @@ html{
     background-color: slateblue;
 }
 
+.parallax-container {
+    height: 60vh;
+}
+
 #jobTitle{
     font-size: 3vh;
 }
 
-.parallax-container {
-    height: 50vh;
-  }
+#accroche{
+    color: white;
+    text-align: justify;
+    padding-top: 5vh;
+}

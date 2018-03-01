@@ -10,7 +10,9 @@ $(document).ready(function () {
     });
 
     $('.parallax').parallax();
-    $('.carousel').carousel();
+    $('.carousel.carousel-slider').carousel({fullWidth: true});
+    
+    
     //Use "scroll fire" plugin above to display content when the user scrolls to a fixed part of the page
 
     // var options = [
