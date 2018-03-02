@@ -10,8 +10,14 @@ html{
     padding-top: 2.5vh;
 }
 
-#accroche{
+#hook{
     color: white;
     text-align: justify;
     padding-top: 5vh;
+}
+
+.subSection{
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    color: white;
 }

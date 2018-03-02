@@ -3,7 +3,7 @@ $(document).ready(function () {
         menuWidth: 300,
         edge: 'left',
         closeOnClick: true,
-        draggable: true, 
+        draggable: true,
     });
     $('.parallax').parallax();
     $('.carousel.carousel-slider').carousel({fullWidth: true});
