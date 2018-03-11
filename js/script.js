@@ -43,39 +43,16 @@ $(document).ready(function () {
 
     });
 
-    //Display a message when data are successfully sent
-
-    // $("#submitModal").on("click", function () {
-    //     // console.log("clicksubmit");
-    //     var $toastContent = $('<span>Votre message a bien été envoyé</span>');
-    //     Materialize.toast($toastContent, 5000);
-    // });
-
-    // Submit message using ajax
+    // Submit message
 
     $("#submitModal").on("click", function () {
-        // Get the form.
-        var form = $('#contactForm');
-
-            // Submit the form using AJAX.
-            $.ajax({
-                type: 'POST',
-                url: "php/mailer.php",
-                data: $(form).serialize(),// Serialize the form data
-                success: function(){
-                    var $toastContent = $("<span>Votre message a bien été envoyé</span>");//.text(response);
-                    Materialize.toast($toastContent, 5000);
-                },
-
-                error: function () {
-                    var $toastContent = $("<span>Une erreur est survenue lors de l\'envoi de votre message. Veillez à remplir tous les champs.</span>");//.text(response);
-                    Materialize.toast($toastContent, 5000); 
-
-                }
-
-                
-            });
-
+        if ($("#name").val() == '' || $("#email").val() == '' || $("#message").val() == '') {
+            var $notif = $("<span>Votre message n'a pas pu être envoyé. Veillez à bien remplir tous les champs.</span>");
+            Materialize.toast($notif, 5000);
+        } else {
+            console.log("success");
+            var $notif = $("<span>Votre message va être envoyé, je vous recontacterai dans les plus brefs délais.</span>");
+            Materialize.toast($notif, 5000);
+        }
     });
-
 });

@@ -5,6 +5,8 @@
 // mail( $to , $subject , $message);
 // echo"stralalafifi";
 
+session_start();
+
     // Only process POST requests
     
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
