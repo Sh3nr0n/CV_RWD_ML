@@ -126,33 +126,31 @@
 
             <div id="mailModal" class="modal">
                 <div class="modal-content">
-                    <form id="ajax-contact" method="post" action="mailer.php">
+                    <form id="contactForm" method="post">
                         <div class="input-field">
                             <i class="material-icons prefix">account_circle</i>
                             <input id="name" class="validate" type="text" name="name" required>
                             <label for="name">Veuillez entrez vos noms et prénom</label>
                         </div>
-
                         <div class="input-field">
                             <i class="material-icons prefix">email</i>
                             <input id="email" class="validate" type="email" name="email" required>
                             <label for="email">Veuillez entrer votre adresse mail</label>
                         </div>
-
                         <div class="input-field">
                             <i class="material-icons prefix">mode_edit</i>
                             <textarea id="message" class="materialize-textarea" name="message" required></textarea>
                             <label for="message">Merci de laisser votre message, je vous recontacterai</label>
-
                         </div>
-
                         <div class="field">
-                            <button class="modal-action modal-close waves-effect waves-green btn-flat right" type="submit">Envoyer</button>
+                            <button id="submitModal" class="modal-action modal-close waves-effect waves-green btn-flat right" type="submit">Envoyer</button>
                             <button class="modal-action modal-close waves-effect waves-green btn-flat right" type="reset">Annuler</button>
                         </div>
                     </form>
                 </div>
             </div>
+
+            <div id="form-messages"></div>
 
             <!-- Accroche -->
 
