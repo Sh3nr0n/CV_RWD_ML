@@ -18,26 +18,47 @@ $(document).ready(function () {
     // Plays sounds when user clicks on my picture (portrait)
 
     var i = 0;
-    var sound;
+    var soundAie = new Audio('sound/aie.ogg');
+    var soundOuie = new Audio('sound/ouie.ogg');
+    var soundFini = new Audio('sound/fini.ogg');
+
     $("#photo").on("click", function () {
         ++i;
         switch (i) {
             case 1:
                 console.log("aie1");
-                //sound = "sound/fichierAïe.mp3";
+                soundAie.play();
+                $('#photo').attr({
+                    src: 'img/photoAie.jpg'
+                });
                 break;
             case 2:
                 console.log("aie2");
-                sound = "sound/fichierOuïe.mp3";
+                soundOuie.play();
+                $('#photo').attr({
+                    src: 'img/photoOuie.jpg'
+                });
                 break;
             case 3:
                 console.log("aie3");
-                //sound = "sound/fichierCestFiniOui.mp3";
+                $('#photo').attr({
+                    src: 'img/photoFini.jpg'
+                });
+                soundFini.play();
+                break;
+            case 4:
+                console.log("reset");
+                $('#photo').attr({
+                    src: 'img/photo.jpg'
+                });
                 i = 0;
                 break;
             default:
                 console.log("default");
-                //sound = "sound/fichierAïe.mp3";
+                $('#photo').attr({
+                    src: 'img/photoAie'
+                });
+                soundAie.play();
                 break;
         }
 
@@ -57,6 +78,8 @@ $(document).ready(function () {
     });
 
     //Download action
-    $('#download').attr({target: '_blank', 
-                    href  : 'doc/Mehdi_LEFEUVRE.pdf'});
+    $('#download').attr({
+        target: '_blank',
+        href: 'doc/Mehdi_LEFEUVRE.pdf'
+    });
 });
