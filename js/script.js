@@ -55,4 +55,8 @@ $(document).ready(function () {
             Materialize.toast($notif, 5000);
         }
     });
+
+    //Download action
+    $('#download').attr({target: '_blank', 
+                    href  : 'doc/Mehdi_LEFEUVRE.pdf'});
 });
