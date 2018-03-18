@@ -77,9 +77,14 @@ $(document).ready(function () {
         }
     });
 
-    //Download action
-    $('#download').attr({
+    //Download actions
+    $('#downloadCv').attr({
         target: '_blank',
-        href: 'doc/Mehdi_LEFEUVRE.pdf'
+        href: 'doc/CV_Mehdi_LEFEUVRE.pdf'
+    });
+
+    $('#downloadLettre').attr({
+        target: '_blank',
+        href: 'doc/Lettre_Mehdi_LEFEUVRE.pdf'
     });
 });
