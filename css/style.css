@@ -30,3 +30,7 @@ html{
 #mailFooter{
     margin-bottom: 4vh;
 }
+
+.page-footer{
+    background-color: #00897b ;
+}
