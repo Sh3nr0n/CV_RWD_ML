@@ -19,7 +19,7 @@ html{
 .modal{ 
     margin-left:35vw;
     width: 50vw !important ; 
-    height: 50vh !important ; 
+    height: 60vh !important ; 
     overflow-x:hidden;
 } 
 
@@ -27,7 +27,7 @@ html{
     .modal{ 
         margin-left:5vw;
         width: 90vw !important ; 
-        height: 40vh !important ; 
+        height: 50vh !important ; 
     } 
   }
 
