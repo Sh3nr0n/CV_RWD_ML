@@ -27,6 +27,7 @@ html{
     .modal{ 
         margin-left:5vw;
         width: 90vw !important ; 
+        height: 90vh !important ; 
     } 
   }
 
