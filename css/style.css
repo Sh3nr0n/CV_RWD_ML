@@ -2,8 +2,8 @@ html{
     background-color: slateblue;
 }
 
-.parallax-container {
-    height: 60vh;
+#photoPulse{
+    border-radius:50%;
 }
 
 #jobTitle{
@@ -33,4 +33,4 @@ html{
 
 .page-footer{
     background-color: #00897b ;
-}
+}   
