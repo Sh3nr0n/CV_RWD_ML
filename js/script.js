@@ -7,10 +7,9 @@ $(document).ready(function () {
         draggable: true,
     });
 
-    $('.parallax').parallax();
-
     $('.carousel.carousel-slider').carousel({
-        fullWidth: true
+        fullWidth: true,
+        indicators: false
     });
 
     $('.modal').modal();

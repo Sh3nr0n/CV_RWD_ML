@@ -36,6 +36,10 @@ a {
     color:white;
 }
 
+.indicators{
+    display:none;
+}
+
 .subSection{
     padding-bottom: 2vh;
     padding-top: 2vh;
