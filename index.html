@@ -36,128 +36,587 @@
     </header>
 
     <main role="main">
-        <div>
-            <div class="row">
-                <div class="col">
+        <div class="row">
+            <div class="col">
 
-                    <!-- Left aside navbar -->
+                <!-- Left aside navbar -->
 
-                    <ul id="slide-out" class="side-nav fixed">
-                        <li>
-                            <div class="user-view">
-                                <div class="background">
-                                    <img src="img/back.jpg">
-                                </div>
-                                <a id="photoPulse" href="#" class="btn indigo lighten-5 pulse">
+                <ul id="slide-out" class="side-nav fixed">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                                <img src="img/back.jpg">
+                            </div>
+                            <a id="photoPulse" href="#" class="btn indigo lighten-5 pulse">
                                 <img id="photo" class="circle" src="img/photo.jpg">
                             </a>
-                                <span class="white-text name">Mehdi Lefeuvre</>
-                                <br/>
+                            <span class="white-text name">Mehdi Lefeuvre</>
+                                <br />
                                 <span class="white-text">32 ans, Permis B</span>
-                                <br/>
+                                <br />
                                 <span class="white-text">06 66 31 59 48</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="center-align flow-text">
-                                <span class="black-text">Me contacter : </span>
-                                <a href="#mailModal" class="btn btn-floating pulse modal-trigger">@</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#jobTitle" class="black-text">
-                                <i class="material-icons">home</i>Accueil</a>
-                        </li>
-                        <li>
-                            <a href="#skillsLanguages" class="black-text">
-                                <i class="material-icons">stars</i>Compétences</a>
-                        </li>
-                        <li>
-                            <a href="#training" class="black-text">
-                                <i class="material-icons">school</i>Formations</a>
-                        </li>
-                        <li>
-                            <a href="#projects" class="black-text">
-                                <i class="material-icons">style</i>Projets</a>
-                        </li>
-                        <li>
-                            <a href="#professionalExp" class="black-text">
-                                <i class="material-icons">work</i>Expériences Pro</a>
-                        </li>
-                        <li>
-                            <a href="#hobbies" class="black-text">
-                                <i class="material-icons">thumb_up</i>Centres d'intérêt</a>
-                        </li>
-                    </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="center-align flow-text">
+                            <span class="black-text">Me contacter : </span>
+                            <a href="#mailModal" class="btn btn-floating pulse modal-trigger">@</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#jobTitle" class="black-text">
+                            <i class="material-icons">home</i>Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#skillsLanguages" class="black-text">
+                            <i class="material-icons">stars</i>Compétences</a>
+                    </li>
+                    <li>
+                        <a href="#training" class="black-text">
+                            <i class="material-icons">school</i>Formations</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="black-text">
+                            <i class="material-icons">style</i>Projets</a>
+                    </li>
+                    <li>
+                        <a href="#professionalExp" class="black-text">
+                            <i class="material-icons">work</i>Expériences Pro</a>
+                    </li>
+                    <li>
+                        <a href="#hobbies" class="black-text">
+                            <i class="material-icons">thumb_up</i>Centres d'intérêt</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact form -->
+            
+            <div id="mailModal" class="modal">
+                <div class="modal-content">
+                    <form id="contactForm" action="https://formspree.io/mehdi.lefeuvre@gmail.com" method="post" target="_blank">
+                        <div class="input-field">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="name" class="validate" type="text" name="name" required>
+                            <label for="name">Renseignez vos nom et prénom</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">email</i>
+                            <input id="email" class="validate" type="email" name="email" required>
+                            <label for="email">Veuillez saisir votre adresse mail</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea id="message" class="materialize-textarea" name="message" required></textarea>
+                            <label for="message">Veuillez saisir votre message</label>
+                        </div>
+                        <div class="field">
+                            <button id="submitModal" class="modal-action modal-close waves-effect waves-green btn-flat right"
+                                type="submit">Envoyer</button>
+                            <button class="modal-action modal-close waves-effect waves-green btn-flat right" type="reset">Annuler</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="col s12 m9 offset-m3">
+            </div>
+       
+            <div class="col s12 m9 offset-m3">
 
-                    <!-- Contact form -->
 
-                    <div id="mailModal" class="modal">
-                        <div class="modal-content">
-                            <form id="contactForm" action="https://formspree.io/mehdi.lefeuvre@gmail.com" method="post"
-                                target="_blank">
-                                <div class="input-field">
-                                    <i class="material-icons prefix">account_circle</i>
-                                    <input id="name" class="validate" type="text" name="name" required>
-                                    <label for="name">Renseignez vos nom et prénom</label>
+
+                <!-- Accroche -->
+
+                <div class="section center">
+                    <div class="container center-align flow-text white-text" id="hook">
+                        <blockquote>"The greatest teacher failure is" - M. Yoda</blockquote>
+                    </div>
+                </div>
+
+                <!-- Compétences, langages et technos -->
+
+                <div class="section center">
+                    <div class="center-align">
+                        <i class="material-icons white-text">stars</i>
+                        <span class="container center-align flow-text subSection" id="skillsLanguages">Compétences</span>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="img/perso.jpg">
                                 </div>
-                                <div class="input-field">
-                                    <i class="material-icons prefix">email</i>
-                                    <input id="email" class="validate" type="email" name="email" required>
-                                    <label for="email">Veuillez saisir votre adresse mail</label>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Qui suis-je ?
+                                        <i class="material-icons right">more_vert</i>
+                                    </span>
                                 </div>
-                                <div class="input-field">
-                                    <i class="material-icons prefix">mode_edit</i>
-                                    <textarea id="message" class="materialize-textarea" name="message" required></textarea>
-                                    <label for="message">Veuillez saisir votre message</label>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Je suis
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                    <ul>
+                                        <li>Actuellement en formation</li>
+                                        <li>de développeur logiciel.</li>
+                                        <li>Je suis curieux, créatif,</li>
+                                        <li>organisé & autonome</li>
+                                    </ul>
                                 </div>
-                                <div class="field">
-                                    <button id="submitModal" class="modal-action modal-close waves-effect waves-green btn-flat right"
-                                        type="submit">Envoyer</button>
-                                    <button class="modal-action modal-close waves-effect waves-green btn-flat right"
-                                        type="reset">Annuler</button>
+                            </div>
+                        </div>
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="img/project_mngt1.jpg">
                                 </div>
-                            </form>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Gestion projets
+                                        <i class="material-icons right">more_vert</i>
+                                    </span>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">& Planification
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                    <ul>
+                                        <li>Méthode AGILES (SCRUM)</li>
+                                        <li>Anglais fluide</li>
+                                        <li>Conception et maquettage</li>
+                                        <li>Méthodologies MERISE, UML</li>
+                                        <li>Maîtrise outils collaboratifs,</li>
+                                        <li>outils de planification</li>
+                                        <li>& qualité web (OPQUAST)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="img/language.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Langages
+                                        <i class="material-icons right">more_vert</i>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4"> & Technologies
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                    <ul>
+                                        <li>HTML, CSS, JQuery</li>
+                                        <li>Materialize, Bootstrap</li>
+                                        <li>Material-UI, JavaScript,</li>
+                                        <li>ReactJS, NodeJS, ExpressJS</li>
+                                        <li>Potgresql, Mysql, MongoDB, DynamoDB</li>
+                                        <li>API : Leaflet, google-maps</li>
+                                        <li>PHP, Composer</li>
+                                        <li>AWS, GraphQL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="img/earth.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Écologie
+                                        <i class="material-icons right">more_vert</i>
+                                    </span>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">& Environnement
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                    <ul>
+                                        <li>Écologie du paysage</li>
+                                        <li>Fonctionnement des écosystèmes</li>
+                                        <li>Dynamique des populations</li>
+                                        <li>Bio-statistiques</li>
+                                        <li>Agro-écologie</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="img/geomatic6.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Géomatique
+                                        <i class="material-icons right">more_vert</i>
+                                    </span>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">& Cartographie
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                    <ul>
+                                        <li>Webmapping</li>
+                                        <li>Analyse de données</li>
+                                        <li>Traitement d’images</li>
+                                        <li>Calcul d’indicateurs statistiques</li>
+                                        <li>Sémiologie graphique</li>
+                                        <li>Edition cartographique</li>
+                                        <li>PostGis, QGIS, GRASS GIS</li>
+                                        <li>ArcGis, eCognition, ENVI</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="img/binary3.jpeg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Informatique
+                                        <i class="material-icons right">more_vert</i>
+                                    </span>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">& Réseau
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                    <ul>
+                                        <li>Linux, Windows,</li>
+                                        <li>Raspbian, Apache</li>
+                                        <li>Amazon Web Services,</li>
+                                        <li>Geoserver</li>
+                                        <li>Héberger du contenu web</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Accroche -->
+                    <!-- Formations -->
 
-                    <div class="section center">
-                        <div class="container center-align flow-text white-text" id="hook">
-                            <blockquote>"The greatest teacher failure is" - M. Yoda</blockquote>
+                    <div class="section">
+                        <div class="center-align">
+                            <i class="material-icons white-text">school</i>
+                            <span class="container center-align flow-text subSection" id="training">Formations</span>
                         </div>
+                        <ul class="collapsible popout" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">developer_mode</i>Stage - Développeur Junior</div>
+                                <div class="collapsible-body blue darken-3 white-text">
+                                    <ul>
+                                        <li>
+                                            <em>Durée : 2,5 mois (2018), Lieu : Adopte Ma Tomate</em>
+                                        </li>
+                                        <li>Période de formation en entreprise</li>
+                                        <li>Application mobile fullstack JS</li>
+                                        <li>Développements « front-end » : ReactJS, Material-UI</li>
+                                        <li>Développements « back-end » : NodeJS, GraphQL, DynamoDB</li>
+                                        <li>Application hébergé chez Amazon Web Services</li>
+                                        <li>Conception d’UI et de composants React</li>
+                                        <li>Développement et implémentation de requêtes avec une BDD NoSQL</li>
+                                        <li>Maquettage, diagramme d'actvité et de séquence (UML) </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">developer_mode</i>Equivalent Licence 2 - Développeur
+                                    web et
+                                    logiciel</div>
+                                <div class="collapsible-body blue darken-3 white-text">
+                                    <ul>
+                                        <li>
+                                            <em>Durée : 11 mois (2017 - 2018), Lieu : Simplon Pamiers</em>
+                                        </li>
+                                        <li>Titre professionnel de niveau III délivré par le Ministère du Travail
+                                            (RNCP 5927).</li>
+                                        <li>Développement « front-end » et « back-end ».</li>
+                                        <li>Administration systèmes.</li>
+                                        <li>Programmation d’objets connectés.</li>
+                                        <li>Conception d’interfaces.</li>
+                                        <li>Gestion de projet appliquant les méthodologies agiles (SCRUM).</li>
+                                        <li>Méthodes de pédagogie active, pair programming.</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">location_city</i>Stage - Chargé d'études
+                                    environnement</div>
+                                <div class="collapsible-body blue darken-3 white-text">
+                                    <ul>
+                                        <li>
+                                            <em>Durée : 8 mois (2012), Lieu : Agence d’Urbanisme de Toulouse</em>
+                                        </li>
+                                        <li>Gestion de bases de données.</li>
+                                        <li>Traitement de données géospatiales.</li>
+                                        <li>Calculs d'indices paysagers.</li>
+                                        <li>Classifications supervisées.</li>
+                                        <li>Analyse des potentialités écologiques du SCoT de la Grande
+                                            Agglomération Toulousaine.</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">map</i>Master 2 - Aménagement du Territoire et
+                                    Télédétection</div>
+                                <div class="collapsible-body blue darken-3 white-text">
+                                    <ul>
+                                        <li>
+                                            <em>Durée : 1 an (2011 - 2012), Lieu : Université Toulouse III</em>
+                                        </li>
+                                        <li>Conception et gestion de bases de données.</li>
+                                        <li>Traitement et interprétation de données bio-statistiques.</li>
+                                        <li>Traitement d’images et Application des Technologies Spatiales.</li>
+                                        <li>Écologie appliquée aux agrosystèmes, écologie des milieux terrestre et
+                                            aquatique, écologie
+                                            du paysage.</li>
+                                        <li>Systématique des plantes, physiologie végétale, inventaires
+                                            naturalistes.</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">language</i>Stage - Chargé d'études R&D agricole et
+                                    forestier</div>
+                                <div class="collapsible-body blue darken-3 white-text">
+                                    <ul>
+                                        <li>
+                                            <em>Durée : 10 mois (2010 - 2011), Lieu : Centre d’Etudes Spatial de la
+                                                Biosphère (CESBIO)</em>
+                                        </li>
+                                        <li>Collecte et traitement de données spatiales.</li>
+                                        <li>Beta-test d'une plateforme de gestion d'exploitation agricole.</li>
+                                        <li>Validation de modèles biophysiques appliqués à l’irrigation.</li>
+                                        <li>Digitalisation de plans et édition de cartes.</li>
+                                        <li>Télédétection appliquée au suivi de parcelles forestières.</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">public</i>Master 1 - Sciences, mention écologie</div>
+                                <div class="collapsible-body blue darken-3 white-text">
+                                    <ul>
+                                        <li>
+                                            <em>Durée : 1 an (2009 - 2010), Lieu : Université Toulouse III</em>
+                                        </li>
+                                        <li>Initiation à la programmation et aux outils mathématiques appliqués aux
+                                            biostatistiques</li>
+                                        <li>Analyse, traitement et interprétation de données en écologie</li>
+                                        <li>Systèmes d'Information Géographiques (SIG)</li>
+                                        <li>Génétique et Dynamique des populations</li>
+                                        <li>Droit de l'environnement</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">local_florist</i>Licence 3 - Biologie des Organismes,
+                                    Populations et Écosystèmes</div>
+                                <div class="collapsible-body blue darken-3 white-text">
+                                    <ul>
+                                        <li>
+                                            <em>Durée : 3 ans (2006 - 2009), Lieu : Université Toulouse III</em>
+                                        </li>
+                                        <li>Traitement des données biologiques et méthodologie expérimentale</li>
+                                        <li>Ecologie appliquée à la conduite des agrosystèmes</li>
+                                        <li>Classification animale, systématique des plantes et physiologie
+                                            végétale</li>
+                                        <li>Biologie cellulaire, moléculaire, microbiologie</li>
+                                        <li>Biochimie des substances naturelles</li>
+                                        <li>Paléontologie-Géologie</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
-                    <!-- Compétences, langages et technos -->
+                    <!-- Div projets -->
 
                     <div class="section center">
                         <div class="center-align">
-                            <i class="material-icons white-text">stars</i>
-                            <span class="container center-align flow-text subSection" id="skillsLanguages">Compétences</span>
+                            <i class="material-icons white-text">style</i>
+                            <span class="container center-align flow-text subSection" id="projects">Projets</span>
+                        </div>
+                        <div class="carousel carousel-slider center" data-indicators="true">
+                            <div class="carousel-fixed-item center">
+                            </div>
+                            <div class="carousel-item teal darken-2 white-text" id="carousselOne">
+                                <h2>Adopte Ma Tomate</h2>
+                                <p class="white-text">
+                                    Application mobile destinée à connecter les jardiniers et les propriétaires de
+                                    jardins
+                                    <a href="https://app.adoptematomate.com/gardens" target="_blank">
+                                        <i class="material-icons white-text">touch_app</i>
+                                    </a>
+                                </p>
+                                <img class="responsive-img" src="img/prj_adopte.png">
+                            </div>
+                            <div class="carousel-item green accent-4 white-text" id="carousselTwo">
+                                <h2>Photothèque naturaliste</h2>
+                                <p class="white-text">Photothèque hébergeant les photgraphies des membres de
+                                    l'association pour alimenter une banque d'images interne
+                                    <a href="http://www.naturemp.org/phototheque/piwigo" target="_blank">
+                                        <i class="material-icons white-text">touch_app</i>
+                                    </a>
+                                </p>
+                                <img class="responsive-img" src="img/prj_piwigo.png">
+                            </div>
+                            <div class="carousel-item indigo white-text" id="carousselThree">
+                                <h2>Smart City</h2>
+                                <p class="white-text">Application réalisée dans le cadre d'un projet pédagogique pour
+                                    le compte du FabLab de Pamiers
+                                    <a href="https://k0d3.alwaysdata.net/smart_city/" target="_blank">
+                                        <i class="material-icons white-text">touch_app</i>
+                                    </a>
+                                </p>
+                                <img class="responsive-img" src="img/prj_smartcity.png">
+                            </div>
+                            <div class="carousel-item teal white-text" id="carousselFour">
+                                <h2>Galerie photo</h2>
+                                <p class="white-text">Projet de galerie photo en ReactJS et ExpressJS, en cours de
+                                    développement
+                                    <a href="https://github.com/Sh3nr0n/GaleryReactExpress" target="_blank">
+                                        <i class="material-icons white-text">touch_app</i>
+                                    </a>
+                                </p>
+                                <img class="responsive-img" src="img/prj_gallery.png">
+                            </div>
+                            <div class="carousel-item deep-purple darken-4 white-text" id="carousselFour">
+                                <h2>Plan de potager virtuel</h2>
+                                <p class="white-text">Projet de site d'aide à la création de plan de potager en
+                                    ReactJS, en cours de développement
+                                    <a href="https://github.com/Sh3nr0n/virtual_garden_planing" target="_blank">
+                                        <i class="material-icons white-text">touch_app</i>
+                                    </a>
+                                </p>
+                                <img class="responsive-img" src="img/prj_garden.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Div Exp pro -->
+
+                    <div class="section">
+                        <div class="center-align">
+                            <i class="material-icons white-text">work</i>
+                            <span class="container center-align flow-text subSection" id="professionalExp">Expériences
+                                professionnelles</span>
+                        </div>
+                        <ul class="collapsible popout" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">language</i>Support technique client sur solution
+                                    cartographique web (GeoStore / One Atlas)</div>
+                                <div class="collapsible-body indigo darken-2 white-text">
+                                    <ul>
+                                        <li>
+                                            <em>Durée : 18 mois (2016 - 2017), Lieu : Airbus DS</em>
+                                        </li>
+                                        <li>Facilitateur entre les différents services (service client,
+                                            programmation satellite,
+                                            développement logiciel, techniciens, ventes, marketing).</li>
+                                        <li>Qualification opérationnelle des portails web, reporting de bugs,
+                                            spécification des demandes
+                                            de développement.</li>
+                                        <li>Rédaction des news, des guides utilisateurs et des FAQ, veille
+                                            concurrentielle.</li>
+                                        <li>Formation des utilisateurs et promotion auprès des clients des produits
+                                            GeoStore et One
+                                            Atlas (Rome, Lyon, Toulouse).</li>
+                                    </ul>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">keyboard</i>Ingénieur en développement logiciel,
+                                    thématiques agricoles et forestières</div>
+                                <div class="collapsible-body indigo darken-2 white-text">
+                                    <ul>
+                                        <li>
+                                            <em>Durée : 8 mois (2015 - 2016), Lieu : Airbus DS</em>
+                                        </li>
+                                        <li>Développement de solutions logicielles cartographiques.</li>
+                                        <li>Développement d’algorithmes de détection d’objets fins en forêt
+                                            tropicale (routes, déforestation).
+                                        </li>
+                                        <li>Traitement d’image satellites, calculs d’indices biophysiques.</li>
+                                        <li>Alpha testing de logiciels et rédaction de documentation utilisateur.</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">terrain</i>Expert SIG en gestion des risques naturels
+                                    sur projet européen (IncREO)
+                                </div>
+                                <div class="collapsible-body indigo darken-2 white-text">
+                                    <ul>
+                                        <li>
+                                            <em>Durée : 14 mois (2013 - 2015), Lieu : Airbus DS</em>
+                                        </li>
+                                        <li>Création et Gestion de bases de données.</li>
+                                        <li>Développement d’un outil d’analyse d'itinéraire et d'un simulateur de
+                                            séismes.</li>
+                                        <li>Formation des utilisateurs aux outils (Pays-Bas,Italie, Allemagne).</li>
+                                        <li>Mise en place et gestion d’un Web Atlas avec Geoserver.</li>
+                                        <li>Rédaction d’articles scientifiques et de documentation technique en
+                                            anglais.</li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">nature</i>Technicien de production en cartographie
+                                    forestière</div>
+                                <div class="collapsible-body indigo darken-2 white-text">
+                                    <ul>
+                                        <li>
+                                            <em>Durée : 7 mois (2012 - 2013), Lieu : Airbus DS</em>
+                                        </li>
+                                        <li>Calcul d'indices biophysiques et statistiques.</li>
+                                        <li>Classification et mosaïquage d'images satellites.</li>
+                                        <li>Cartographie de la Forêt Tropicale Humide du bassin du Congo.</li>
+                                        <li>Analyse historique de la déforestation et de la dégradation forestière.</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Centres d'intérêt -->
+
+                    <div class="section center">
+                        <div class="center-align">
+                            <i class="material-icons white-text">thumb_up</i>
+                            <span class="container center-align flow-text subSection" id="hobbies">Centres
+                                d'intérêt</span>
                         </div>
                         <div class="row">
                             <div class="col s12 m4">
                                 <div class="card">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator" src="img/perso.jpg">
+                                        <img class="activator" src="img/tree2.jpeg">
                                     </div>
                                     <div class="card-content">
-                                        <span class="card-title activator grey-text text-darken-4">Qui suis-je ?
+                                        <span class="card-title activator grey-text text-darken-4">Nature
                                             <i class="material-icons right">more_vert</i>
-                                        </span>
                                     </div>
                                     <div class="card-reveal">
-                                        <span class="card-title grey-text text-darken-4">Je suis
+                                        <span class="card-title grey-text text-darken-4">Activités
                                             <i class="material-icons right">close</i>
                                         </span>
                                         <ul>
-                                            <li>Actuellement en formation</li>
-                                            <li>de développeur logiciel.</li>
-                                            <li>Je suis curieux, créatif,</li>
-                                            <li>organisé & autonome</li>
+                                            <li>Sorties nature : ornithologie, mycologie, botanique</li>
+                                            <li>Jardinage potager</li>
+                                            <li>Randonnées : Pic d'Estats, MontCalm</li>
+                                            <li>Cyclotourisme : canal du midi, Drôme à vélo</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -165,25 +624,23 @@
                             <div class="col s12 m4">
                                 <div class="card">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator" src="img/project_mngt1.jpg">
+                                        <img class="activator" src="img/bd1.jpg">
                                     </div>
                                     <div class="card-content">
-                                        <span class="card-title activator grey-text text-darken-4">Gestion projets
+                                        <span class="card-title activator grey-text text-darken-4">Bande dessinée
                                             <i class="material-icons right">more_vert</i>
                                         </span>
                                     </div>
                                     <div class="card-reveal">
-                                        <span class="card-title grey-text text-darken-4">& Planification
+                                        <span class="card-title grey-text text-darken-4">Auteurs & &#338uvres
                                             <i class="material-icons right">close</i>
                                         </span>
                                         <ul>
-                                            <li>Méthode AGILES (SCRUM)</li>
-                                            <li>Anglais fluide</li>
-                                            <li>Conception et maquettage</li>
-                                            <li>Méthodologies MERISE, UML</li>
-                                            <li>Maîtrise outils collaboratifs,</li>
-                                            <li>outils de planification</li>
-                                            <li>& qualité web (OPQUAST)</li>
+                                            <li>Denis Bajram : Universal WAR I & II</li>
+                                            <li>Jens Harder : Alpha Directions</li>
+                                            <li>Moebius : Arzach, Edena</li>
+                                            <li>Joann sfar : Donjon</li>
+                                            <li>Manu Larcenet : Le retour à la terre, Le combat ordianire, Blast</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -191,25 +648,23 @@
                             <div class="col s12 m4">
                                 <div class="card">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator" src="img/language.png">
+                                        <img class="activator" src="img/cinema_final.png">
                                     </div>
                                     <div class="card-content">
-                                        <span class="card-title activator grey-text text-darken-4">Langages
+                                        <span class="card-title activator grey-text text-darken-4">Cinéma
                                             <i class="material-icons right">more_vert</i>
+                                        </span>
                                     </div>
                                     <div class="card-reveal">
-                                        <span class="card-title grey-text text-darken-4"> & Technologies
+                                        <span class="card-title grey-text text-darken-4">Genres & Films
                                             <i class="material-icons right">close</i>
                                         </span>
                                         <ul>
-                                            <li>HTML, CSS, JQuery</li>
-                                            <li>Materialize, Bootstrap</li>
-                                            <li>Material-UI, JavaScript,</li>
-                                            <li>ReactJS, NodeJS, ExpressJS</li>
-                                            <li>Potgresql, Mysql, MongoDB, DynamoDB</li>
-                                            <li>API : Leaflet, google-maps</li>
-                                            <li>PHP, Composer</li>
-                                            <li>AWS, GraphQL</li>
+                                            <li>Science fiction : Interstellar, Matrix, Blade Runner, Mad Max</li>
+                                            <li>Fantasy: Le seigneur des anneaux, Game Of Thrones</li>
+                                            <li>Super Héros : Iron Man</li>
+                                            <li>Gangster : Pulp Fiction, Usual Suspects</li>
+                                            <li>Animation : Miyazaki, Nausicaa</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -219,23 +674,22 @@
                             <div class="col s12 m4">
                                 <div class="card">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator" src="img/earth.png">
+                                        <img class="activator" src="img/music8.jpg">
                                     </div>
                                     <div class="card-content">
-                                        <span class="card-title activator grey-text text-darken-4">Écologie
+                                        <span class="card-title activator grey-text text-darken-4">Musique
                                             <i class="material-icons right">more_vert</i>
                                         </span>
                                     </div>
                                     <div class="card-reveal">
-                                        <span class="card-title grey-text text-darken-4">& Environnement
+                                        <span class="card-title grey-text text-darken-4">Genres & Artistes
                                             <i class="material-icons right">close</i>
                                         </span>
                                         <ul>
-                                            <li>Écologie du paysage</li>
-                                            <li>Fonctionnement des écosystèmes</li>
-                                            <li>Dynamique des populations</li>
-                                            <li>Bio-statistiques</li>
-                                            <li>Agro-écologie</li>
+                                            <li>Hip Hop : Jurassic Five, Sound Providers</li>
+                                            <li>Electro : Fakear, Sayag Jazz Machine, Stromae</li>
+                                            <li>Jazz : Miles Davis, Fela Kuti</li>
+                                            <li>Percussions : Mamady Keïta</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -243,26 +697,22 @@
                             <div class="col s12 m4">
                                 <div class="card">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator" src="img/geomatic6.png">
+                                        <img class="activator" src="img/roman.jpeg">
                                     </div>
                                     <div class="card-content">
-                                        <span class="card-title activator grey-text text-darken-4">Géomatique
+                                        <span class="card-title activator grey-text text-darken-4">Romans
                                             <i class="material-icons right">more_vert</i>
                                         </span>
                                     </div>
                                     <div class="card-reveal">
-                                        <span class="card-title grey-text text-darken-4">& Cartographie
+                                        <span class="card-title grey-text text-darken-4">Auteurs & &#338uvres
                                             <i class="material-icons right">close</i>
                                         </span>
                                         <ul>
-                                            <li>Webmapping</li>
-                                            <li>Analyse de données</li>
-                                            <li>Traitement d’images</li>
-                                            <li>Calcul d’indicateurs statistiques</li>
-                                            <li>Sémiologie graphique</li>
-                                            <li>Edition cartographique</li>
-                                            <li>PostGis, QGIS, GRASS GIS</li>
-                                            <li>ArcGis, eCognition, ENVI</li>
+                                            <li>Isaac Asimov : Les robots, Fondation</li>
+                                            <li>J.R.R Tolkien : The hobbit, The Lord of the rings </li>
+                                            <li>Alain Damasio : La horde du conrevent</li>
+                                            <li>H.P. Lovecraft : Le mythe de Cthulhu</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -270,477 +720,33 @@
                             <div class="col s12 m4">
                                 <div class="card">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator" src="img/binary3.jpeg">
+                                        <img class="activator" src="img/sciences1.jpeg">
                                     </div>
                                     <div class="card-content">
-                                        <span class="card-title activator grey-text text-darken-4">Informatique
+                                        <span class="card-title activator grey-text text-darken-4">Sciences
                                             <i class="material-icons right">more_vert</i>
                                         </span>
                                     </div>
                                     <div class="card-reveal">
-                                        <span class="card-title grey-text text-darken-4">& Réseau
+                                        <span class="card-title grey-text text-darken-4">& technologie
                                             <i class="material-icons right">close</i>
                                         </span>
                                         <ul>
-                                            <li>Linux, Windows,</li>
-                                            <li>Raspbian, Apache</li>
-                                            <li>Amazon Web Services,</li>
-                                            <li>Geoserver</li>
-                                            <li>Héberger du contenu web</li>
+                                            <li>Astronomie</li>
+                                            <li>Physique quantique</li>
+                                            <li>Technologies du spatial</li>
+                                            <li>Raspberry</li>
+                                            <li>Technologies web</li>
                                         </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Formations -->
-
-                        <div class="section">
-                            <div class="center-align">
-                                <i class="material-icons white-text">school</i>
-                                <span class="container center-align flow-text subSection" id="training">Formations</span>
-                            </div>
-                            <ul class="collapsible popout" data-collapsible="accordion">
-                                <li>
-                                    <div class="collapsible-header">
-                                        <i class="material-icons">developer_mode</i>Stage - Développeur Junior</div>
-                                    <div class="collapsible-body blue darken-3 white-text">
-                                        <ul>
-                                            <li>
-                                                <em>Durée : 2,5 mois (2018), Lieu : Adopte Ma Tomate</em>
-                                            </li>
-                                            <li>Période de formation en entreprise</li>
-                                            <li>Application mobile fullstack JS</li>
-                                            <li>Développements « front-end » : ReactJS, Material-UI</li>
-                                            <li>Développements « back-end » : NodeJS, GraphQL, DynamoDB</li>
-                                            <li>Application hébergé chez Amazon Web Services</li>
-                                            <li>Conception d’UI et de composants React</li>
-                                            <li>Développement et implémentation de requêtes avec une BDD NoSQL</li>
-                                            <li>Maquettage, diagramme d'actvité et de séquence (UML) </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header">
-                                        <i class="material-icons">developer_mode</i>Equivalent Licence 2 - Développeur
-                                        web et
-                                        logiciel</div>
-                                    <div class="collapsible-body blue darken-3 white-text">
-                                        <ul>
-                                            <li>
-                                                <em>Durée : 11 mois (2017 - 2018), Lieu : Simplon Pamiers</em>
-                                            </li>
-                                            <li>Titre professionnel de niveau III délivré par le Ministère du Travail
-                                                (RNCP 5927).</li>
-                                            <li>Développement « front-end » et « back-end ».</li>
-                                            <li>Administration systèmes.</li>
-                                            <li>Programmation d’objets connectés.</li>
-                                            <li>Conception d’interfaces.</li>
-                                            <li>Gestion de projet appliquant les méthodologies agiles (SCRUM).</li>
-                                            <li>Méthodes de pédagogie active, pair programming.</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header">
-                                        <i class="material-icons">location_city</i>Stage - Chargé d'études
-                                        environnement</div>
-                                    <div class="collapsible-body blue darken-3 white-text">
-                                        <ul>
-                                            <li>
-                                                <em>Durée : 8 mois (2012), Lieu : Agence d’Urbanisme de Toulouse</em>
-                                            </li>
-                                            <li>Gestion de bases de données.</li>
-                                            <li>Traitement de données géospatiales.</li>
-                                            <li>Calculs d'indices paysagers.</li>
-                                            <li>Classifications supervisées.</li>
-                                            <li>Analyse des potentialités écologiques du SCoT de la Grande
-                                                Agglomération Toulousaine.</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header">
-                                        <i class="material-icons">map</i>Master 2 - Aménagement du Territoire et
-                                        Télédétection</div>
-                                    <div class="collapsible-body blue darken-3 white-text">
-                                        <ul>
-                                            <li>
-                                                <em>Durée : 1 an (2011 - 2012), Lieu : Université Toulouse III</em>
-                                            </li>
-                                            <li>Conception et gestion de bases de données.</li>
-                                            <li>Traitement et interprétation de données bio-statistiques.</li>
-                                            <li>Traitement d’images et Application des Technologies Spatiales.</li>
-                                            <li>Écologie appliquée aux agrosystèmes, écologie des milieux terrestre et
-                                                aquatique, écologie
-                                                du paysage.</li>
-                                            <li>Systématique des plantes, physiologie végétale, inventaires
-                                                naturalistes.</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header">
-                                        <i class="material-icons">language</i>Stage - Chargé d'études R&D agricole et
-                                        forestier</div>
-                                    <div class="collapsible-body blue darken-3 white-text">
-                                        <ul>
-                                            <li>
-                                                <em>Durée : 10 mois (2010 - 2011), Lieu : Centre d’Etudes Spatial de la
-                                                    Biosphère (CESBIO)</em>
-                                            </li>
-                                            <li>Collecte et traitement de données spatiales.</li>
-                                            <li>Beta-test d'une plateforme de gestion d'exploitation agricole.</li>
-                                            <li>Validation de modèles biophysiques appliqués à l’irrigation.</li>
-                                            <li>Digitalisation de plans et édition de cartes.</li>
-                                            <li>Télédétection appliquée au suivi de parcelles forestières.</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header">
-                                        <i class="material-icons">public</i>Master 1 - Sciences, mention écologie</div>
-                                    <div class="collapsible-body blue darken-3 white-text">
-                                        <ul>
-                                            <li>
-                                                <em>Durée : 1 an (2009 - 2010), Lieu : Université Toulouse III</em>
-                                            </li>
-                                            <li>Initiation à la programmation et aux outils mathématiques appliqués aux
-                                                biostatistiques</li>
-                                            <li>Analyse, traitement et interprétation de données en écologie</li>
-                                            <li>Systèmes d'Information Géographiques (SIG)</li>
-                                            <li>Génétique et Dynamique des populations</li>
-                                            <li>Droit de l'environnement</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header">
-                                        <i class="material-icons">local_florist</i>Licence 3 - Biologie des Organismes,
-                                        Populations et Écosystèmes</div>
-                                    <div class="collapsible-body blue darken-3 white-text">
-                                        <ul>
-                                            <li>
-                                                <em>Durée : 3 ans (2006 - 2009), Lieu : Université Toulouse III</em>
-                                            </li>
-                                            <li>Traitement des données biologiques et méthodologie expérimentale</li>
-                                            <li>Ecologie appliquée à la conduite des agrosystèmes</li>
-                                            <li>Classification animale, systématique des plantes et physiologie
-                                                végétale</li>
-                                            <li>Biologie cellulaire, moléculaire, microbiologie</li>
-                                            <li>Biochimie des substances naturelles</li>
-                                            <li>Paléontologie-Géologie</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Div projets -->
-
-                        <div class="section center">
-                            <div class="center-align">
-                                <i class="material-icons white-text">style</i>
-                                <span class="container center-align flow-text subSection" id="projects">Projets</span>
-                            </div>
-                            <div class="carousel carousel-slider center" data-indicators="true">
-                                <div class="carousel-fixed-item center">
-                                </div>
-                                <div class="carousel-item teal darken-2 white-text" id="carousselOne">
-                                    <h2>Adopte Ma Tomate</h2>
-                                    <p class="white-text">
-                                        Application mobile destinée à connecter les jardiniers et les propriétaires de jardins
-                                        <a href="https://app.adoptematomate.com/gardens" target="_blank">
-                                            <i class="material-icons white-text">touch_app</i>
-                                        </a>
-                                    </p>
-                                    <img class="responsive-img" src="img/prj_adopte.png">
-                                </div>
-                                <div class="carousel-item green accent-4 white-text" id="carousselTwo">
-                                    <h2>Photothèque naturaliste</h2>
-                                    <p class="white-text">Photothèque hébergeant les photgraphies des membres de l'association pour alimenter une banque d'images interne
-                                        <a href="http://www.naturemp.org/phototheque/piwigo" target="_blank">
-                                            <i class="material-icons white-text">touch_app</i>
-                                        </a>
-                                    </p>
-                                    <img class="responsive-img" src="img/prj_piwigo.png">
-                                </div>
-                                <div class="carousel-item indigo white-text" id="carousselThree">
-                                    <h2>Smart City</h2>
-                                    <p class="white-text">Application réalisée dans le cadre d'un projet pédagogique pour le compte du FabLab de Pamiers
-                                        <a href="https://k0d3.alwaysdata.net/smart_city/" target="_blank">
-                                            <i class="material-icons white-text">touch_app</i>
-                                        </a>
-                                    </p>
-                                    <img class="responsive-img" src="img/prj_smartcity.png">
-                                </div>
-                                <div class="carousel-item teal white-text" id="carousselFour">
-                                    <h2>Galerie photo</h2>
-                                    <p class="white-text">Projet de galerie photo en ReactJS et ExpressJS, en cours de développement
-                                        <a href="https://github.com/Sh3nr0n/GaleryReactExpress" target="_blank">
-                                            <i class="material-icons white-text">touch_app</i>
-                                        </a>
-                                    </p>
-                                    <img class="responsive-img" src="img/prj_gallery.png">
-                                </div>
-                                <div class="carousel-item deep-purple darken-4 white-text" id="carousselFour">
-                                        <h2>Plan de potager virtuel</h2>
-                                        <p class="white-text">Projet de site d'aide à la création de plan de potager en ReactJS, en cours de développement
-                                            <a href="https://github.com/Sh3nr0n/virtual_garden_planing" target="_blank">
-                                                <i class="material-icons white-text">touch_app</i>
-                                            </a>
                                         </p>
-                                        <img class="responsive-img" src="img/prj_garden.png">
-                                    </div>
-                            </div>
-                        </div>
-
-                        <!-- Div Exp pro -->
-
-                        <div class="section">
-                            <div class="center-align">
-                                <i class="material-icons white-text">work</i>
-                                <span class="container center-align flow-text subSection" id="professionalExp">Expériences
-                                    professionnelles</span>
-                            </div>
-                            <ul class="collapsible popout" data-collapsible="accordion">
-                                <li>
-                                    <div class="collapsible-header">
-                                        <i class="material-icons">language</i>Support technique client sur solution
-                                        cartographique web (GeoStore / One Atlas)</div>
-                                    <div class="collapsible-body indigo darken-2 white-text">
-                                        <ul>
-                                            <li>
-                                                <em>Durée : 18 mois (2016 - 2017), Lieu : Airbus DS</em>
-                                            </li>
-                                            <li>Facilitateur entre les différents services (service client,
-                                                programmation satellite,
-                                                développement logiciel, techniciens, ventes, marketing).</li>
-                                            <li>Qualification opérationnelle des portails web, reporting de bugs,
-                                                spécification des demandes
-                                                de développement.</li>
-                                            <li>Rédaction des news, des guides utilisateurs et des FAQ, veille
-                                                concurrentielle.</li>
-                                            <li>Formation des utilisateurs et promotion auprès des clients des produits
-                                                GeoStore et One
-                                                Atlas (Rome, Lyon, Toulouse).</li>
-                                        </ul>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header">
-                                        <i class="material-icons">keyboard</i>Ingénieur en développement logiciel,
-                                        thématiques agricoles et forestières</div>
-                                    <div class="collapsible-body indigo darken-2 white-text">
-                                        <ul>
-                                            <li>
-                                                <em>Durée : 8 mois (2015 - 2016), Lieu : Airbus DS</em>
-                                            </li>
-                                            <li>Développement de solutions logicielles cartographiques.</li>
-                                            <li>Développement d’algorithmes de détection d’objets fins en forêt
-                                                tropicale (routes, déforestation).
-                                            </li>
-                                            <li>Traitement d’image satellites, calculs d’indices biophysiques.</li>
-                                            <li>Alpha testing de logiciels et rédaction de documentation utilisateur.</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header">
-                                        <i class="material-icons">terrain</i>Expert SIG en gestion des risques naturels
-                                        sur projet européen (IncREO)
-                                    </div>
-                                    <div class="collapsible-body indigo darken-2 white-text">
-                                        <ul>
-                                            <li>
-                                                <em>Durée : 14 mois (2013 - 2015), Lieu : Airbus DS</em>
-                                            </li>
-                                            <li>Création et Gestion de bases de données.</li>
-                                            <li>Développement d’un outil d’analyse d'itinéraire et d'un simulateur de
-                                                séismes.</li>
-                                            <li>Formation des utilisateurs aux outils (Pays-Bas,Italie, Allemagne).</li>
-                                            <li>Mise en place et gestion d’un Web Atlas avec Geoserver.</li>
-                                            <li>Rédaction d’articles scientifiques et de documentation technique en
-                                                anglais.</li>
-                                            <li></li>
-                                            <li></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header">
-                                        <i class="material-icons">nature</i>Technicien de production en cartographie
-                                        forestière</div>
-                                    <div class="collapsible-body indigo darken-2 white-text">
-                                        <ul>
-                                            <li>
-                                                <em>Durée : 7 mois (2012 - 2013), Lieu : Airbus DS</em>
-                                            </li>
-                                            <li>Calcul d'indices biophysiques et statistiques.</li>
-                                            <li>Classification et mosaïquage d'images satellites.</li>
-                                            <li>Cartographie de la Forêt Tropicale Humide du bassin du Congo.</li>
-                                            <li>Analyse historique de la déforestation et de la dégradation forestière.</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Centres d'intérêt -->
-
-                        <div class="section center">
-                            <div class="center-align">
-                                <i class="material-icons white-text">thumb_up</i>
-                                <span class="container center-align flow-text subSection" id="hobbies">Centres
-                                    d'intérêt</span>
-                            </div>
-                            <div class="row">
-                                <div class="col s12 m4">
-                                    <div class="card">
-                                        <div class="card-image waves-effect waves-block waves-light">
-                                            <img class="activator" src="img/tree2.jpeg">
-                                        </div>
-                                        <div class="card-content">
-                                            <span class="card-title activator grey-text text-darken-4">Nature
-                                                <i class="material-icons right">more_vert</i>
-                                        </div>
-                                        <div class="card-reveal">
-                                            <span class="card-title grey-text text-darken-4">Activités
-                                                <i class="material-icons right">close</i>
-                                            </span>
-                                            <ul>
-                                                <li>Sorties nature : ornithologie, mycologie, botanique</li>
-                                                <li>Jardinage potager</li>
-                                                <li>Randonnées : Pic d'Estats, MontCalm</li>
-                                                <li>Cyclotourisme : canal du midi, Drôme à vélo</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col s12 m4">
-                                    <div class="card">
-                                        <div class="card-image waves-effect waves-block waves-light">
-                                            <img class="activator" src="img/bd1.jpg">
-                                        </div>
-                                        <div class="card-content">
-                                            <span class="card-title activator grey-text text-darken-4">Bande dessinée
-                                                <i class="material-icons right">more_vert</i>
-                                            </span>
-                                        </div>
-                                        <div class="card-reveal">
-                                            <span class="card-title grey-text text-darken-4">Auteurs & &#338uvres
-                                                <i class="material-icons right">close</i>
-                                            </span>
-                                            <ul>
-                                                <li>Denis Bajram : Universal WAR I & II</li>
-                                                <li>Jens Harder : Alpha Directions</li>
-                                                <li>Moebius : Arzach, Edena</li>
-                                                <li>Joann sfar : Donjon</li>
-                                                <li>Manu Larcenet : Le retour à la terre, Le combat ordianire, Blast</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col s12 m4">
-                                    <div class="card">
-                                        <div class="card-image waves-effect waves-block waves-light">
-                                            <img class="activator" src="img/cinema_final.png">
-                                        </div>
-                                        <div class="card-content">
-                                            <span class="card-title activator grey-text text-darken-4">Cinéma
-                                                <i class="material-icons right">more_vert</i>
-                                            </span>
-                                        </div>
-                                        <div class="card-reveal">
-                                            <span class="card-title grey-text text-darken-4">Genres & Films
-                                                <i class="material-icons right">close</i>
-                                            </span>
-                                            <ul>
-                                                <li>Science fiction : Interstellar, Matrix, Blade Runner, Mad Max</li>
-                                                <li>Fantasy: Le seigneur des anneaux, Game Of Thrones</li>
-                                                <li>Super Héros : Iron Man</li>
-                                                <li>Gangster : Pulp Fiction, Usual Suspects</li>
-                                                <li>Animation : Miyazaki, Nausicaa</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col s12 m4">
-                                    <div class="card">
-                                        <div class="card-image waves-effect waves-block waves-light">
-                                            <img class="activator" src="img/music8.jpg">
-                                        </div>
-                                        <div class="card-content">
-                                            <span class="card-title activator grey-text text-darken-4">Musique
-                                                <i class="material-icons right">more_vert</i>
-                                            </span>
-                                        </div>
-                                        <div class="card-reveal">
-                                            <span class="card-title grey-text text-darken-4">Genres & Artistes
-                                                <i class="material-icons right">close</i>
-                                            </span>
-                                            <ul>
-                                                <li>Hip Hop : Jurassic Five, Sound Providers</li>
-                                                <li>Electro : Fakear, Sayag Jazz Machine, Stromae</li>
-                                                <li>Jazz : Miles Davis, Fela Kuti</li>
-                                                <li>Percussions : Mamady Keïta</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col s12 m4">
-                                    <div class="card">
-                                        <div class="card-image waves-effect waves-block waves-light">
-                                            <img class="activator" src="img/roman.jpeg">
-                                        </div>
-                                        <div class="card-content">
-                                            <span class="card-title activator grey-text text-darken-4">Romans
-                                                <i class="material-icons right">more_vert</i>
-                                            </span>
-                                        </div>
-                                        <div class="card-reveal">
-                                            <span class="card-title grey-text text-darken-4">Auteurs & &#338uvres
-                                                <i class="material-icons right">close</i>
-                                            </span>
-                                            <ul>
-                                                <li>Isaac Asimov : Les robots, Fondation</li>
-                                                <li>J.R.R Tolkien : The hobbit, The Lord of the rings </li>
-                                                <li>Alain Damasio : La horde du conrevent</li>
-                                                <li>H.P. Lovecraft : Le mythe de Cthulhu</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col s12 m4">
-                                    <div class="card">
-                                        <div class="card-image waves-effect waves-block waves-light">
-                                            <img class="activator" src="img/sciences1.jpeg">
-                                        </div>
-                                        <div class="card-content">
-                                            <span class="card-title activator grey-text text-darken-4">Sciences
-                                                <i class="material-icons right">more_vert</i>
-                                            </span>
-                                        </div>
-                                        <div class="card-reveal">
-                                            <span class="card-title grey-text text-darken-4">& technologie
-                                                <i class="material-icons right">close</i>
-                                            </span>
-                                            <ul>
-                                                <li>Astronomie</li>
-                                                <li>Physique quantique</li>
-                                                <li>Technologies du spatial</li>
-                                                <li>Raspberry</li>
-                                                <li>Technologies web</li>
-                                            </ul>
-                                            </p>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="row">

@@ -16,6 +16,23 @@ html{
     padding-top: 5vh;
 }
 
+.modal{ 
+    margin-left:35vw;
+    width: 50vw !important ; 
+    height: 50vh !important ; 
+    overflow-x:hidden;
+} 
+
+@media screen and (max-width: 992px) {
+    .modal{ 
+        margin-left:5vw;
+        width: 90vw !important ; 
+        height: 40vh !important ; 
+    } 
+  }
+
+
+
 .subSection{
     padding-bottom: 2vh;
     padding-top: 2vh;
