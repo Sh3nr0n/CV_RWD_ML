@@ -76,6 +76,27 @@ $(document).ready(function () {
         }
     });
 
+    //Redirect each project to corresponding URL in a new tab (just like target="_blank" does)
+    $("#prj1").click(function () {
+        window.open("https://app.adoptematomate.com/gardens");
+    });
+
+    $("#prj2").click(function () {
+        window.open("http://www.naturemp.org/phototheque/piwigo");
+    });
+
+    $("#prj3").click(function () {
+        window.open("https://k0d3.alwaysdata.net/smart_city/");
+    });
+
+    $("#prj4").click(function () {
+        window.open("https://github.com/Sh3nr0n/GaleryReactExpress");
+    });
+
+    $("#prj5").click(function () {
+        window.open("https://github.com/Sh3nr0n/virtual_garden_planing");
+    });
+
     //Download actions
     $('#downloadCv').attr({
         target: '_blank',
