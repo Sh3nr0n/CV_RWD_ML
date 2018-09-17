@@ -81,7 +81,6 @@ $(document).ready(function () {
 
     //Redirect each project to corresponding URL in a new tab (just like target="_blank" does)
     $("#prj1").click(function () {
-        console.log("click")
         window.open("https://app.adoptematomate.com/gardens");
     });
 
