@@ -15,6 +15,17 @@ $(document).ready(function () {
         numVisible : 1
         });
 
+    var mySwiper = new Swiper('.swiper-container', {
+        speed: 400,
+        spaceBetween: 100,
+        autoHeight: true,
+        loop:true
+    });
+
+    mySwiper.on('slideChange', function () {
+        console.log('slide changed');
+      });
+
     $('.modal').modal();
 
     // Plays sounds when user clicks on my picture (portrait)

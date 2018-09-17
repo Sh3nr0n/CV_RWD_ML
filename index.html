@@ -8,6 +8,7 @@
     <title>Mehdi Lefeuvre</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -437,6 +438,89 @@
 
                     <!-- Div projets -->
 
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                    <div class=" teal darken-2 white-text" id="carousselOne">
+                                            <h2>Adopte Ma Tomate</h2>
+                                            <p>
+                                                <a id="prj1">
+                                                    Application mobile destinée à connecter les jardiniers et les propriétaires de
+                                                jardins
+                                                    <i class="material-icons white-text">touch_app</i>
+                                                </a>
+                                            </p>
+                                            <img class="responsive-img" src="img/prj_adopte.png">
+                                        </div>
+                            </div>
+                            <div class="swiper-slide">
+                                    <div class="carousel-item green accent-4 white-text" id="carousselTwo">
+                                            <h2>Photothèque naturaliste</h2>
+                                            <p>
+                                                <a id="prj2">
+                                                    Photothèque hébergeant les photgraphies des membres de
+                                                l'association
+                                                    <i class="material-icons white-text">touch_app</i>
+                                                </a>
+                                            </p>
+                                            <img class="responsive-img" src="img/prj_nmp.png">
+                                        </div>
+                            </div>
+                            <div class="swiper-slide">
+                                    <div class="carousel-item indigo white-text" id="carousselThree">
+                                            <h2>Smart City</h2>
+                                            <p>
+                                                <a id="prj3">
+                                                    Application réalisée dans le cadre d'un projet pédagogique pour
+                                                le FabLab de Pamiers
+                                                    <i class="material-icons white-text">touch_app</i>
+                                                </a>
+                                            </p>
+                                            <img class="responsive-img" src="img/prj_smartcity.png">
+                                        </div>
+                            </div>
+                            <div class="swiper-slide">
+                                    <div class="carousel-item teal white-text" id="carousselFour">
+                                            <h2>Galerie photo</h2>
+                                            <p>
+                                                <a id="prj4">
+                                                    Projet de galerie photo en ReactJS et ExpressJS, en cours de
+                                                développement
+                                                    <i class="material-icons white-text">touch_app</i>
+                                                </a>
+                                            </p>
+                                            <img class="responsive-img" src="img/prj_gallery.png">
+                                        </div>
+                            </div>
+                            <div class="swiper-slide">
+                                    <div class="carousel-item deep-purple darken-4 white-text" id="carousselFive">
+                                            <h2>Plan de potager virtuel</h2>
+                                            <p>
+                                                <a id="prj5">
+                                                    Projet de site d'aide à la création de plan de potager en
+                                                React, en cours de développement
+                                                    <i class="material-icons white-text">touch_app</i>
+                                                </a>
+                                            </p>
+                                            <img class="responsive-img" src="img/prj_garden.png">
+                                        </div>
+                            </div>
+
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+
                     <div class="section center">
                         <div class="center-align">
                             <i class="material-icons white-text">style</i>
@@ -808,17 +892,16 @@
                     </div>
                     <div class="footer-copyright">
                         <div class="container">
-                            CV réalisé avec
-                            <a class="grey-text text-lighten-3" href="http://materializecss.com/" target="_blank">Materialize</a>
+                            CV réalisé par Mehdi Lefeuvre
                         </div>
                     </div>
                 </div>
 
     </footer>
 
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="lib/jquery/jquery_v3.3.1.js"></script>
     <script type="text/javascript" src="lib/materialize/js/materialize.min.js"></script>
+    <script src="lib/swiper/js/swiper.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
 </body>
