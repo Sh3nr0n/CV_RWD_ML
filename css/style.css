@@ -2,10 +2,6 @@ html{
     background-color: slateblue;
 }
 
-#photoPulse{
-    border-radius:50%;
-}
-
 #jobTitle{
     padding-top: 2.5vh;
 }
@@ -31,6 +27,43 @@ html{
     }
 }
 
+
+/* Slider headings */
+h2 {
+    padding-top: 5%;
+}
+
+@media screen and (max-width: 1196px) {
+    .swiper-button-prev-custom{
+        visibility: hidden;
+    }
+    
+    .swiper-button-next-custom{
+        visibility: hidden;
+    }
+}
+
+/* Slider arrows */
+.swiper-button-prev-custom{
+    cursor: pointer;
+    display: block;
+    float: left;  
+    z-index: 3;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+.swiper-button-next-custom{
+    cursor: pointer;
+    display: block;
+    float: right;  
+    z-index: 3;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+
 a {
     text-decoration: none;
     color:white;
@@ -40,8 +73,16 @@ a:hover {
     cursor:pointer
 }
 
-.indicators{
-    display:none;
+@keyframes glowing {
+    0% { box-shadow: 0 0 -10px #ffffff; }
+    40% { box-shadow: 0 0 40px #ffffff; }
+    60% { box-shadow: 0 0 60px #ffffff; }
+    100% { box-shadow: 0 0 -10px #ffffff; }
+}
+  
+.linkTo {
+  border-radius: 50%;
+  animation: glowing 5000ms infinite;
 }
 
 .subSection{

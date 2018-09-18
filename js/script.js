@@ -19,9 +19,30 @@ $(document).ready(function () {
         speed: 400,
         spaceBetween: 100,
         autoHeight: true,
-        loop:true
+        loop:true,
+        effect:'slide',
+        freeModeMomentum:true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable :true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next-custom',
+            prevEl: '.swiper-button-prev-custom',
+          },
+          breakpoints: {
+            // when window width is <= 990px
+            990: {
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'progressbar',
+                    clickable :true,
+                  },               
+            }
+        },
     });
-
+    
     mySwiper.on('slideChange', function () {
         console.log('slide changed');
       });

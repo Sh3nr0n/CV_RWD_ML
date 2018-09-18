@@ -48,9 +48,7 @@
                             <div class="background">
                                 <img src="img/back.jpg">
                             </div>
-                            <a id="photoPulse" class="btn indigo lighten-5 pulse">
-                                <img id="photo" class="circle" src="img/photo.jpg">
-                            </a>
+                                <img id="photo" class="circle linkTo" src="img/photo.jpg">
                             <span class="white-text name">Mehdi Lefeuvre</>
                                 <br />
                                 <span class="white-text">32 ans, Permis B</span>
@@ -437,6 +435,11 @@
                     </div>
 
                     <!-- Div projets -->
+                    <div class="section center">
+                            <div class="center-align">
+                                <i class="material-icons white-text">style</i>
+                                <span class="container center-align flow-text subSection" id="projects">Projets</span>
+                            </div>
 
                     <!-- Slider main container -->
                     <div class="swiper-container">
@@ -445,12 +448,12 @@
                             <!-- Slides -->
                             <div class="swiper-slide">
                                     <div class=" teal darken-2 white-text" id="carousselOne">
-                                            <h2>Adopte Ma Tomate</h2>
+                                            <h2 class="flow-text" >Adopte Ma Tomate</h2>
                                             <p>
                                                 <a id="prj1">
                                                     Application mobile destinée à connecter les jardiniers et les propriétaires de
                                                 jardins
-                                                    <i class="material-icons white-text">touch_app</i>
+                                                    <i class="material-icons white-text linkTo">touch_app</i>
                                                 </a>
                                             </p>
                                             <img class="responsive-img" src="img/prj_adopte.png">
@@ -458,12 +461,12 @@
                             </div>
                             <div class="swiper-slide">
                                     <div class="carousel-item green accent-4 white-text" id="carousselTwo">
-                                            <h2>Photothèque naturaliste</h2>
+                                            <h2 class="flow-text" >Photothèque naturaliste</h2>
                                             <p>
                                                 <a id="prj2">
                                                     Photothèque hébergeant les photgraphies des membres de
                                                 l'association
-                                                    <i class="material-icons white-text">touch_app</i>
+                                                    <i class="material-icons white-text linkTo">touch_app</i>
                                                 </a>
                                             </p>
                                             <img class="responsive-img" src="img/prj_nmp.png">
@@ -471,12 +474,12 @@
                             </div>
                             <div class="swiper-slide">
                                     <div class="carousel-item indigo white-text" id="carousselThree">
-                                            <h2>Smart City</h2>
+                                            <h2 class="flow-text" >Smart City</h2>
                                             <p>
                                                 <a id="prj3">
                                                     Application réalisée dans le cadre d'un projet pédagogique pour
                                                 le FabLab de Pamiers
-                                                    <i class="material-icons white-text">touch_app</i>
+                                                    <i class="material-icons white-text linkTo">touch_app</i>
                                                 </a>
                                             </p>
                                             <img class="responsive-img" src="img/prj_smartcity.png">
@@ -484,12 +487,12 @@
                             </div>
                             <div class="swiper-slide">
                                     <div class="carousel-item teal white-text" id="carousselFour">
-                                            <h2>Galerie photo</h2>
+                                            <h2 class="flow-text" >Galerie photo</h2>
                                             <p>
                                                 <a id="prj4">
                                                     Projet de galerie photo en ReactJS et ExpressJS, en cours de
                                                 développement
-                                                    <i class="material-icons white-text">touch_app</i>
+                                                    <i class="material-icons white-text linkTo">touch_app</i>
                                                 </a>
                                             </p>
                                             <img class="responsive-img" src="img/prj_gallery.png">
@@ -497,12 +500,12 @@
                             </div>
                             <div class="swiper-slide">
                                     <div class="carousel-item deep-purple darken-4 white-text" id="carousselFive">
-                                            <h2>Plan de potager virtuel</h2>
+                                            <h2 class="flow-text" >Plan de potager virtuel</h2>
                                             <p>
                                                 <a id="prj5">
                                                     Projet de site d'aide à la création de plan de potager en
                                                 React, en cours de développement
-                                                    <i class="material-icons white-text">touch_app</i>
+                                                    <i class="material-icons white-text linkTo">touch_app</i>
                                                 </a>
                                             </p>
                                             <img class="responsive-img" src="img/prj_garden.png">
@@ -514,77 +517,19 @@
                         <div class="swiper-pagination"></div>
                     
                         <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <!-- <div class="swiper-button-prev"></div> -->
+                        <!-- <div class="swiper-button-next"></div> -->
+                        <div class="swiper-button-prev-custom">
+                            <i class="large material-icons">keyboard_arrow_left</i>
+                        </div>
+                        <div class="swiper-button-next-custom">
+                                <i class="large material-icons">keyboard_arrow_right</i>
+                        </div>
                     
                         <!-- If we need scrollbar -->
-                        <div class="swiper-scrollbar"></div>
+                        <!-- <div class="swiper-scrollbar"></div> -->
                     </div>
-
-                    <div class="section center">
-                        <div class="center-align">
-                            <i class="material-icons white-text">style</i>
-                            <span class="container center-align flow-text subSection" id="projects">Projets</span>
-                        </div>
-                        <div class="carousel carousel-slider center" data-indicators="false">
-                            <div class="carousel-fixed-item center">
-                            </div>
-                            <div class="carousel-item teal darken-2 white-text" id="carousselOne">
-                                <h2>Adopte Ma Tomate</h2>
-                                <p>
-                                    <a id="prj1">
-                                        Application mobile destinée à connecter les jardiniers et les propriétaires de
-                                    jardins
-                                        <i class="material-icons white-text">touch_app</i>
-                                    </a>
-                                </p>
-                                <img class="responsive-img" src="img/prj_adopte.png">
-                            </div>
-                            <div class="carousel-item green accent-4 white-text" id="carousselTwo">
-                                <h2>Photothèque naturaliste</h2>
-                                <p>
-                                    <a id="prj2">
-                                        Photothèque hébergeant les photgraphies des membres de
-                                    l'association
-                                        <i class="material-icons white-text">touch_app</i>
-                                    </a>
-                                </p>
-                                <img class="responsive-img" src="img/prj_piwigo.png">
-                            </div>
-                            <div class="carousel-item indigo white-text" id="carousselThree">
-                                <h2>Smart City</h2>
-                                <p>
-                                    <a id="prj3">
-                                        Application réalisée dans le cadre d'un projet pédagogique pour
-                                    le FabLab de Pamiers
-                                        <i class="material-icons white-text">touch_app</i>
-                                    </a>
-                                </p>
-                                <img class="responsive-img" src="img/prj_smartcity.png">
-                            </div>
-                            <div class="carousel-item teal white-text" id="carousselFour">
-                                <h2>Galerie photo</h2>
-                                <p>
-                                    <a id="prj4">
-                                        Projet de galerie photo en ReactJS et ExpressJS, en cours de
-                                    développement
-                                        <i class="material-icons white-text">touch_app</i>
-                                    </a>
-                                </p>
-                                <img class="responsive-img" src="img/prj_gallery.png">
-                            </div>
-                            <div class="carousel-item deep-purple darken-4 white-text" id="carousselFive">
-                                <h2>Plan de potager virtuel</h2>
-                                <p>
-                                    <a id="prj5">
-                                        Projet de site d'aide à la création de plan de potager en
-                                    React, en cours de développement
-                                        <i class="material-icons white-text">touch_app</i>
-                                    </a>
-                                </p>
-                                <img class="responsive-img" src="img/prj_garden.png">
-                            </div>
-                        </div>
+                    
                     </div>
 
                     <!-- Div Exp pro -->
