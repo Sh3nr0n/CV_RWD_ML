@@ -65,7 +65,7 @@ h2 {
 
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color:white;
 }
 
@@ -94,6 +94,15 @@ a:hover {
 .logoPerso{
     height: 40px;
     margin-left: 2vh;
+}
+
+.logoLink {
+    text-decoration: none;
+}
+
+#opquastLogo{
+    height: 80px;
+    margin-top: 2vh;
 }
 
 #mailFooter{

@@ -15,6 +15,8 @@ $(document).ready(function () {
         numVisible : 1
         });
 
+    // Instantiate a new Swiper carrousel object
+
     var mySwiper = new Swiper('.swiper-container', {
         speed: 400,
         spaceBetween: 100,
@@ -44,7 +46,7 @@ $(document).ready(function () {
     });
     
     mySwiper.on('slideChange', function () {
-        console.log('slide changed');
+        // console.log('slide changed');
       });
 
     $('.modal').modal();
@@ -60,35 +62,35 @@ $(document).ready(function () {
         ++i;
         switch (i) {
             case 1:
-                console.log("aie1");
+                console.log("aïe!");
                 soundAie.play();
                 $('#photo').attr({
                     src: 'img/photoAie.jpg'
                 });
                 break;
             case 2:
-                console.log("aie2");
+                console.log("ouïe!");
                 soundOuie.play();
                 $('#photo').attr({
                     src: 'img/photoOuie.jpg'
                 });
                 break;
             case 3:
-                console.log("aie3");
+                console.log("non mais c'est fini oui!");
                 $('#photo').attr({
                     src: 'img/photoFini.jpg'
                 });
                 soundFini.play();
                 break;
             case 4:
-                console.log("reset");
+                // console.log("reset");
                 $('#photo').attr({
                     src: 'img/photo.jpg'
                 });
                 i = 0;
                 break;
             default:
-                console.log("default");
+                // console.log("default");
                 $('#photo').attr({
                     src: 'img/photoAie'
                 });
@@ -105,32 +107,32 @@ $(document).ready(function () {
             var $notif = $("<span>Votre message n'a pas pu être envoyé. Veillez à bien remplir tous les champs.</span>");
             Materialize.toast($notif, 5000);
         } else {
-            console.log("success");
+            // console.log("success");
             var $notif = $("<span>Votre message va être envoyé, je vous recontacterai dans les plus brefs délais.</span>");
             Materialize.toast($notif, 5000);
         }
     });
 
     //Redirect each project to corresponding URL in a new tab (just like target="_blank" does)
-    $("#prj1").click(function () {
-        window.open("https://app.adoptematomate.com/gardens");
-    });
+    // $("#prj1").click(function () {
+    //     window.open("https://app.adoptematomate.com/gardens");
+    // });
 
-    $("#prj2").click(function () {
-        window.open("http://www.naturemp.org/phototheque/piwigo");
-    });
+    // $("#prj2").click(function () {
+    //     window.open("http://www.naturemp.org/phototheque/piwigo");
+    // });
 
-    $("#prj3").click(function () {
-        window.open("https://k0d3.alwaysdata.net/smart_city/");
-    });
+    // $("#prj3").click(function () {
+    //     window.open("https://k0d3.alwaysdata.net/smart_city/");
+    // });
 
-    $("#prj4").click(function () {
-        window.open("https://github.com/Sh3nr0n/GaleryReactExpress");
-    });
+    // $("#prj4").click(function () {
+    //     window.open("https://github.com/Sh3nr0n/GaleryReactExpress");
+    // });
 
-    $("#prj5").click(function () {
-        window.open("https://github.com/Sh3nr0n/virtual_garden_planing");
-    });
+    // $("#prj5").click(function () {
+    //     window.open("https://github.com/Sh3nr0n/virtual_garden_planing");
+    // });
 
     //Download actions
     $('#downloadCv').attr({
